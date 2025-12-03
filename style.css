@@ -321,3 +321,106 @@ footer a:hover{
   cursor: pointer;
 }
 
+/* ------------------------------ */
+/*         MOBILE FIXES           */
+/* ------------------------------ */
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .logo-container img {
+        width: 70px;
+    }
+
+    .brand-name {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.6em;
+        margin: 1em 0 0 0;
+    }
+
+    /* HERO FIX */
+    .hero {
+        height: auto;
+        padding: 4em 1em;
+    }
+
+    .hero-text {
+        background-color: rgba(0,0,0,0.5);
+        padding: 1.5em;
+        border-radius: 12px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* ABOUT SECTION */
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 90%;
+    }
+
+    /* IMPACT STATS */
+    .stats {
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    /* MENU GRID */
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    /* SUPPORT CARDS */
+    .support-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-container {
+        max-width: 90%;
+    }
+
+    .testimonial {
+        max-width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* Smaller text on very small phones */
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+}
+
