@@ -88,10 +88,11 @@ nav a::after{
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 0 2em;
+    padding: 20px;
+    flex-direction: column;
 }
 
-.hero text{
+.hero-text{
     background-color: rgba(0,0,0,0.5);
     padding: 2em;
     border-radius: 12px;
@@ -235,24 +236,24 @@ nav a::after{
 
 
 .testimonial-container {
-    position: relative;        /* for carousel */
-    width: 100%;               /* full width of section */
-    max-width: 800px;          /* optional, controls maximum width */
-    margin: 0 auto;            /* center horizontally */
-    min-height: 220px;         /* same as before */
-    display: flex;             /* center the card inside */
-    justify-content: center;   /* horizontally center active testimonial */
+    position: relative;        
+    width: 100%;               
+    max-width: 800px;          
+    margin: 0 auto;           
+    min-height: 220px;        
+    display: flex;            
+    justify-content: center;   
 }
 
 
 .testimonial {
-    width: 100%;               /* fill container */
-    max-width: 280px;          /* keep card size */
-    left: 50%;                 /* start from center */
-    transform: translateX(-50%); /* center absolute positioning */
+    width: 100%;              
+    max-width: 280px;          
+    left: 50%;                 
+    transform: translateX(-50%); 
     top: 0;
-    position: absolute;        /* needed for carousel overlap */
-    display: none;             /* hidden by default */
+    position: absolute;        
+    display: none;             
     background: white;
     padding: 20px 25px;
     border-radius: 12px;
@@ -268,7 +269,7 @@ nav a::after{
 }
 
 
-/* Text inside testimonial */
+
 .testimonial p {
     font-size: 1rem;
     margin-bottom: 15px;
@@ -297,8 +298,9 @@ footer a:hover{
 
 .cookie-banner {
   position: fixed;
-  bottom: 20px;
-  left: 50%;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
   transform: translateX(-50%);
   width: 90%;
   max-width: 500px;
@@ -313,11 +315,11 @@ footer a:hover{
 }
 
 .cookie-banner button {
-  padding: 8px 14px;
+  padding: 10;
   border: none;
   background: black;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -408,11 +410,20 @@ footer a:hover{
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem; /* smaller on mobile */
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
 
     /* Smaller text on very small phones */
     .hero h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     nav a {
@@ -422,5 +433,4 @@ footer a:hover{
     .brand-name {
         font-size: 1.2rem;
     }
-}
 
