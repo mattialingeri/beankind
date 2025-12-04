@@ -298,11 +298,9 @@ footer a:hover{
 
 .cookie-banner {
   position: fixed;
-  left:50%
   bottom: 10px;
   left: 10px;
   right: 10px;
-  transform: translateX(-50%);
   width: 90%;
   max-width: 500px;
   background-color: white;
@@ -316,7 +314,7 @@ footer a:hover{
 }
 
 .cookie-banner button {
-  padding: 10;
+  padding: 10px 15px;
   border: none;
   background: black;
   color: white;
@@ -434,5 +432,6 @@ footer a:hover{
     .brand-name {
         font-size: 1.2rem;
     }
+
 
 
