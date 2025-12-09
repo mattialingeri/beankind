@@ -1,5 +1,5 @@
 
-
+ 
 document.addEventListener("DOMContentLoaded", function () {
     
     const banner = document.getElementById("cookie-banner");
@@ -41,5 +41,6 @@ const testimonials = document.querySelectorAll(".testimonial");
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
 }
+
 
 
