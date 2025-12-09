@@ -33,3 +33,13 @@ const testimonials = document.querySelectorAll(".testimonial");
 
     // Rotate every 3 seconds
     setInterval(rotateTestimonials, 4000);
+ function toggleNav() {
+  const nav = document.getElementById("sideNav");
+  nav.style.width = nav.style.width === "250px" ? "0" : "250px";
+}
+
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0";
+}
+
+
