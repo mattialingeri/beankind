@@ -27,7 +27,7 @@ header{
     padding: 1em 3em;
     background-color: #c8ad8d;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 10;
 }
@@ -471,3 +471,4 @@ footer a:hover{
     max-width: 100%;
   }
 }
+
